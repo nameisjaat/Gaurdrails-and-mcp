@@ -1,0 +1,20 @@
+[project]
+name = "multi-agent-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { email = "garvitchoudhary3101@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastmcp>=3.2,<4",
+    "langchain-mcp-adapters>=0.3.2",
+]
+
+[project.scripts]
+multi-agent-project = "multi_agent_project:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
